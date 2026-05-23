@@ -1,0 +1,202 @@
+{
+  "name": "zhicai-skills",
+  "owner": {
+    "name": "hanzhicaicode"
+  },
+  "metadata": {
+    "description": "知材·内容创作工具箱 — 从 2,738 个知识文件中提炼方法论，做成 19 个 Claude Code skill，覆盖公众号/小红书/短视频/朋友圈等内容创作全链路",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "zhicai",
+      "description": "知材·内容创作工具箱主入口。根据你的创作需求自动路由到最合适的技能。",
+      "source": "./",
+      "strict": false,
+      "version": "1.0.0",
+      "category": "content-infrastructure",
+      "keywords": ["content-creation", "router", "writing", "toolkit", "chinese"],
+      "skills": ["./skills/zhicai"]
+    },
+    {
+      "name": "zhicai-全流程编排",
+      "description": "从选题到发布的完整创作工作流，串联所有skill模块，覆盖公众号长文/小红书图文/短视频脚本/朋友圈。",
+      "source": "./",
+      "strict": false,
+      "version": "1.0.0",
+      "category": "content-infrastructure",
+      "keywords": ["full-pipeline", "orchestration", "workflow", "content-creation", "chinese"],
+      "skills": ["./skills/zhicai-全流程编排"]
+    },
+    {
+      "name": "zhicai-选题决策",
+      "description": "基于知识库01-选题系统的选题决策。输入方向输出可执行选题方案。",
+      "source": "./",
+      "strict": false,
+      "version": "1.0.0",
+      "category": "content-pipeline",
+      "keywords": ["topic-selection", "content-strategy", "writing", "chinese"],
+      "skills": ["./skills/zhicai-选题决策"]
+    },
+    {
+      "name": "zhicai-标题生成",
+      "description": "基于18种标题公式库生成爆款标题。",
+      "source": "./",
+      "strict": false,
+      "version": "1.0.0",
+      "category": "content-pipeline",
+      "keywords": ["title", "headline", "formula", "viral", "writing", "chinese"],
+      "skills": ["./skills/zhicai-标题生成"]
+    },
+    {
+      "name": "zhicai-开头钩子",
+      "description": "基于17种开头钩子类型的开头设计与优化。",
+      "source": "./",
+      "strict": false,
+      "version": "1.0.0",
+      "category": "content-pipeline",
+      "keywords": ["hook", "opening", "attention", "writing", "chinese"],
+      "skills": ["./skills/zhicai-开头钩子"]
+    },
+    {
+      "name": "zhicai-叙事结构",
+      "description": "基于85个叙事结构（S/A/B三级）的结构选择与杂交策略。",
+      "source": "./",
+      "strict": false,
+      "version": "1.0.0",
+      "category": "content-pipeline",
+      "keywords": ["narrative", "structure", "framework", "writing", "chinese"],
+      "skills": ["./skills/zhicai-叙事结构"]
+    },
+    {
+      "name": "zhicai-段落心法",
+      "description": "段落技法、金句生成、过渡转折、画面感塑造。",
+      "source": "./",
+      "strict": false,
+      "version": "1.0.0",
+      "category": "content-pipeline",
+      "keywords": ["paragraph", "technique", "golden-sentence", "writing", "chinese"],
+      "skills": ["./skills/zhicai-段落心法"]
+    },
+    {
+      "name": "zhicai-风格调校",
+      "description": "四维语气控制、大师风格模仿、AI去机器味。",
+      "source": "./",
+      "strict": false,
+      "version": "1.0.0",
+      "category": "content-pipeline",
+      "keywords": ["style", "tone", "calibration", "master-mimicry", "writing", "chinese"],
+      "skills": ["./skills/zhicai-风格调校"]
+    },
+    {
+      "name": "zhicai-情感曲线",
+      "description": "6种情感类型 + 5种经典情绪曲线模板的情感曲线设计。",
+      "source": "./",
+      "strict": false,
+      "version": "1.0.0",
+      "category": "content-pipeline",
+      "keywords": ["emotion", "curve", "rhythm", "writing", "chinese"],
+      "skills": ["./skills/zhicai-情感曲线"]
+    },
+    {
+      "name": "zhicai-结尾收束",
+      "description": "基于Peak-End法则和7种结尾类型的结尾设计与CTA优化。",
+      "source": "./",
+      "strict": false,
+      "version": "1.0.0",
+      "category": "content-pipeline",
+      "keywords": ["ending", "closure", "cta", "peak-end", "writing", "chinese"],
+      "skills": ["./skills/zhicai-结尾收束"]
+    },
+    {
+      "name": "zhicai-心理学武器",
+      "description": "27个心理学原理（含西奥迪尼7武器）在创作全链路的部署。",
+      "source": "./",
+      "strict": false,
+      "version": "1.0.0",
+      "category": "content-enhancement",
+      "keywords": ["psychology", "persuasion", "cialdini", "copywriting", "chinese"],
+      "skills": ["./skills/zhicai-心理学武器"]
+    },
+    {
+      "name": "zhicai-爆款预测",
+      "description": "基于BPI爆款潜力指数和五维框架的内容质量诊断与爆款预测。",
+      "source": "./",
+      "strict": false,
+      "version": "1.0.0",
+      "category": "content-enhancement",
+      "keywords": ["viral", "prediction", "bpi", "diagnosis", "content-quality", "chinese"],
+      "skills": ["./skills/zhicai-爆款预测"]
+    },
+    {
+      "name": "zhicai-大师写作法",
+      "description": "30+位国际国内顶级创作者的方法论库与方法调用。",
+      "source": "./",
+      "strict": false,
+      "version": "1.0.0",
+      "category": "content-enhancement",
+      "keywords": ["master", "methodology", "writing-technique", "reference", "chinese"],
+      "skills": ["./skills/zhicai-大师写作法"]
+    },
+    {
+      "name": "zhicai-内容诊断",
+      "description": "多维内容质量诊断：10大写作痛点、五维内容框架、创作者瓶颈突破工具包。",
+      "source": "./",
+      "strict": false,
+      "version": "1.0.0",
+      "category": "content-enhancement",
+      "keywords": ["diagnosis", "bottleneck", "quality-check", "writing-pain", "chinese"],
+      "skills": ["./skills/zhicai-内容诊断"]
+    },
+    {
+      "name": "zhicai-AI去味",
+      "description": "AI写作痕迹检测与去机器味化。29种AI模式检测 + 增量去味技巧。",
+      "source": "./",
+      "strict": false,
+      "version": "1.0.0",
+      "category": "content-enhancement",
+      "keywords": ["ai-detection", "humanization", "de-robotify", "writing-quality", "chinese"],
+      "skills": ["./skills/zhicai-AI去味"]
+    },
+    {
+      "name": "zhicai-跨平台分发",
+      "description": "六类内容形式（公众号/小红书/短视频/播客/星球/Newsletter）的跨平台适配与分发策略。",
+      "source": "./",
+      "strict": false,
+      "version": "1.0.0",
+      "category": "platform-ip",
+      "keywords": ["cross-platform", "distribution", "adaptation", "content-strategy", "chinese"],
+      "skills": ["./skills/zhicai-跨平台分发"]
+    },
+    {
+      "name": "zhicai-IP人设构建",
+      "description": "6种人设类型 + 3种信任构建元素 + 3种转化手法的IP内容策略。",
+      "source": "./",
+      "strict": false,
+      "version": "1.0.0",
+      "category": "platform-ip",
+      "keywords": ["personal-brand", "ip", "trust", "persona", "content-strategy", "chinese"],
+      "skills": ["./skills/zhicai-IP人设构建"]
+    },
+    {
+      "name": "zhicai-素材工坊",
+      "description": "素材捕获、卡片盒系统、灵感管理与创作SOP搭建。",
+      "source": "./",
+      "strict": false,
+      "version": "1.0.0",
+      "category": "platform-ip",
+      "keywords": ["material", "inspiration", "sop", "knowledge-management", "writing", "chinese"],
+      "skills": ["./skills/zhicai-素材工坊"]
+    },
+    {
+      "name": "zhicai-热点追踪",
+      "description": "热点捕捉、选题挖掘、时效性内容生产策略。",
+      "source": "./",
+      "strict": false,
+      "version": "1.0.0",
+      "category": "platform-ip",
+      "keywords": ["trending", "hot-topic", "trend-mining", "timely-content", "chinese"],
+      "skills": ["./skills/zhicai-热点追踪"]
+    }
+  ]
+}
