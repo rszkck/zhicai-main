@@ -3,6 +3,7 @@
 从 `知识库·内容创作者中心`（2738 个文件）中提炼内容创作方法论，做成 19 个 Claude Code skill，覆盖公众号长文、小红书图文、短视频口播、朋友圈文案等一切文字创作场景。
 
 **最新更新：v1.0.0** | 插件数量：19 | 知识原子：31,000+
+**GitHub**：[rszkck/expert-octo-invention](https://github.com/rszkck/expert-octo-invention)
 
 ---
 
