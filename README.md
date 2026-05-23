@@ -120,11 +120,34 @@ claude plugin marketplace add rszkck/zhicai-main
 claude plugin install zhicai@zhicai-skills
 ```
 
-### 通用方式（Codex / Claude Code）
+### 通用方式（所有支持 npx skills 的 agent）
+
+包括 Claude Code、Cursor、Cline、Windsurf 等 55+ agent：
 
 ```bash
 npx -y skills add rszkck/zhicai-main -g --all
 ```
+
+### Hermes
+
+```bash
+# 逐个部署
+for skill in skills/*/; do
+  name=$(basename "$skill")
+  mkdir -p ~/.hermes/skills/"$name"
+  cp "$skill/SKILL.md" ~/.hermes/skills/"$name"/SKILL.md
+done
+```
+
+或使用仓库中的一键脚本：
+
+```bash
+bash scripts/deploy-hermes.sh
+```
+
+### Trae Solo
+
+从 [GitHub Releases](https://github.com/rszkck/zhicai-main/releases) 下载 `zhicai-1.0.0.zip`，解压后将 19 个 skill zip 逐个拖入 Trae Solo 的上传技能窗口。
 
 ### 本地构建
 
@@ -143,10 +166,8 @@ claude plugin update zhicai@zhicai-skills
 /reload-plugins
 ```
 
-#### 通用
-```bash
-npx -y skills add rszkck/zhicai-main -g --all
-```
+#### 通用 / Hermes
+重新运行安装命令即可。
 
 ---
 
